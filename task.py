@@ -1,82 +1,86 @@
-#1
-a = input("enter your string: ")
-print(a)
+# a = 5
+# b = 6
+# print(a + b)      addiction
+# print(a - b)      subtraction
+# print(a * b)      multiply
+# print(a / b)      division
+# print(a // b)     floor division
+# print(a ** b)     power
+# print(a % b)      modulas
 
+# a = 5
+# b = 4
+# print(a > b)
+# print(a < b)
+# print(a >= b)
+# print(a <= b)
+# print(a == b)
 
+# a,b,c = True,False,True
+# if a and c:
+#     print("this are equal to each other")
+# else:
+#     print("this are not equal only one value is true")
+#
+# if b or c:
+#     print("this are only one value true ")
+# else:
+#     print("this are false equal to each other")
+#
+# if not b:
+#     print('true')
+# else:
+#     print('false')
 
-#2
-def count_vowels(s):
-    vowels = "aeiouAEIOU"
-    count = sum(1 for char in s if char in vowels)
-    return count
+#
+# a = 10
+# b = 10
+# c = -10
+#
+# if a == b :
+#     print(" both are same")
+# if a == c :
+#     print(" both are same")
+# else:
+#     print("atleast one is nagative")
 
+# a = 10
+#
+# if a % 3 ==0 or a % 5 == 0:
+#     print("The number is divisible by 3 either 5")
+# else:
+#     print("The number not divisible")
 
-string = "Hello, rahul_sir"
-print("Number of vowels:", count_vowels(string))
+# def order(x):
+#     print("the value is: ",x)     /important pratice
+#     return True if x > 0 else False
+# a = order
+# b = order
+# c = order
+# d = order
+# e = order
+# if a(-4) or  b(4) or c(10):
+#         print("atleast one of the values is possitive")
 
+# or operator with if
+# def fun(a):
+#     if a % 5 == 0 or a % 10 == 0:
+#        print(" a is multiply")
+#     else:
+#         print(" a is not is multiply")
+# fun(5)
+# fun(8)
+# fun(16)
 
+# a = 5
+# b = 8
+# a += b
+# print(a)
 
+# #ternary operator
+# a = 5
+# b = 10
+# print("a is greater than b"if a>b else "b is greater than a")
 
-string = "Hello, rahul_sir"
-reversed_string = string[::-1]
-words_reversed = " ".join(reversed_string.split()[::-1])
-print(words_reversed)
-
-
-
-# 3define name of 10 string in list and find their duplicate value or araange in decending order
-
-
-names = ["shivam", "rahul", "shivam", "kohli", "abd", "rahul", "vaishali", "kohli", "abd", "rahul"]
-
-
-duplicates = {name for name in names if names.count(name) > 1}
-
-
-sorted_names = sorted(names, reverse=True)
-
-print("Duplicate values:", duplicates)
-print("Sorted list in descending order:", sorted_names)
-
-
-
-
-
-
-#5
-for i in range(1, 6):
-    print("*" * i)
-
-
-
-
-#6
-def calculate_grade(average):
-    if average > 90:
-        return 'A'
-    elif 75 <= average < 90:
-        return 'B'
-    elif 60 <= average < 75:
-        return 'C'
-    else:
-        return 'D'
-
-
-name = input("Enter student name: ")
-marks = []
-for i in range(3):
-    mark = float(input(f"Enter marks for subject {i+1}: "))
-    marks.append(mark)
-
-
-total = sum(marks)
-average = total / len(marks)
-grade = calculate_grade(average)
-
-
-print("-" * 30)
-print(f"{name:<10}{total:<15}{average:<10.2f}{grade:<10}")
-
-
-
-
+nice_weather = True
+print("go to walk"if nice_weather else "watch movie  at home")
